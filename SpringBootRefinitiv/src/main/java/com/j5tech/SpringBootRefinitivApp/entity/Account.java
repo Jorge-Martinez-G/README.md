@@ -52,7 +52,15 @@ public class Account implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+	
+	/**
+	 * Override toString method 
+	 */	
+	@Override
+	public String toString() {
+		return "Account [Id=" + Id + ", name=" + name + ", description=" + description + "]";
+	}	
+	
 	/**
 	 * Override hashCode method 
 	 */	
@@ -88,15 +96,6 @@ public class Account implements Serializable {
 		} else if (!name.equals(other.name))
 			return false;
 		return true;
-	}
-
-	/**
-	 * Override toString method 
-	 */	
-	@Override
-	public String toString() {
-		return "Account [Id=" + Id + ", name=" + name + ", description=" + description + "]";
 	}	
-	
 	
 }

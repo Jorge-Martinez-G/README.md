@@ -127,6 +127,9 @@ public class User implements Serializable {
 		return serialVersionUID;
 	}
 
+	/**
+	 * Override toString method 
+	 */	
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
@@ -134,6 +137,9 @@ public class User implements Serializable {
 				+ ", accounts=" + accounts + "]";
 	}
 
+	/**
+	 * Override hashCode method 
+	 */	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
